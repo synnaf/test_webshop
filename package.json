@@ -1,0 +1,16 @@
+{
+  "name": "webbshop",
+  "version": "1.0.0",
+  "description": "A basic webshop 2019-02-19",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha "
+  },
+  "keywords": [
+    "minimal",
+    "shop",
+    "fed19s"
+  ],
+  "author": "Fanny Värnbrink Forsman",
+  "license": "ISC"
+}
