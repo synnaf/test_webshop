@@ -9,3 +9,6 @@ mongoose.connect(dbConfig.databaseURL, dbOptions).then( ()=> {
     app.listen(port, () => console.log(`Listening on port ${port}`)); 
 })
 
+
+let test = "hello"; 
+console.log(test)
