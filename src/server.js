@@ -5,7 +5,8 @@ const port = 8080;
 
 //Route till / 
 app.get("/", (req, res)=> {
-    res.send("Welcome!"); 
+    const ettObjekt = "Hejhej shoppern"; 
+    res.status(200).render("productpage", {ettObjekt}); 
 })
 
 module.exports = {app, port}
