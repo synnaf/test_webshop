@@ -33,7 +33,7 @@ app.post("/product", (req, res)=> {
 
 //lägg in sass-moddleware 
 //lägg in express static 
-if (process.env.NODE_ENV == "developement") {
+if (process.env.NODE_ENV == developement) {
     const sassMiddleware = require("node-sass-middleware")
     app.use(express.sassMiddleware({
         src: path.join(__dirname, "sass"), 
