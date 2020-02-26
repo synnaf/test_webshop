@@ -4,17 +4,13 @@ const app = express();
 const port = process.env.PORT || 8080; 
 const ProductModel = require("../model/productSchema")
 
-
 //view 
 app.set("view engine", "ejs")
-
-app.use(express.urlencoded({extended: true})); 
 
 //Route till / 
 app.get("/productpage", (req, res)=> {
     res.status(200).render("productpage"); 
 })
-
 
 //Route till /product  
 app.get("/product", (req, res)=> {
@@ -34,6 +30,20 @@ app.post("/product", (req, res)=> {
     //send to database 
     res.status(200).render("product", { newTest }); 
 })
+
+//lägg in sass-moddleware 
+//lägg in express static 
+if (process.env.NODE_ENV == "developement") {
+    const sassMiddleware = require("node-sass-middleware")
+    app.use(express.sassMiddleware({
+        src: path.join(__dirname, "sass"), 
+        dest: path.join(__dirname, "public"), 
+        outputStyle: "compressed"
+    }))
+}
+
+app.use(express.static("public")); 
+app.use(express.urlencoded({extended: true})); 
 
 
 module.exports = { app, port, express }

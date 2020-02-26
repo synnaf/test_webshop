@@ -19,3 +19,7 @@ Insufficient number of arguments or no entry found.
 Alternatively, run 'webpack(-cli) --help' for usage info.
 > felmeddelandet betyder att vi måste konfigurera vad webpack ska göra! 
 > webpack ska generera en bundle, så vi säger i vår config vart den ska göra detta
+
+
+> Kontrollera att bundle fungerar: 
+> Kör programmet node dist/bundle.js

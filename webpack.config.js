@@ -32,7 +32,7 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin({
             //resultatet hamnar här 
-            fileName: "public/index.css"
+            filename: "public/index.css"
         })
     ], 
 
