@@ -7,7 +7,6 @@
   "description": "A basic webshop 2019-02-19",
   "main": "app.js",
   "scripts": {
-    "start-sass": "nodemon app.js && node-sass sass -o public --watch",
     "unittest": "mocha",
     "build": "webpack",
     "start": "node dist/bundle.js"
