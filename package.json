@@ -4,9 +4,10 @@
   "description": "A basic webshop 2019-02-19",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js && node-sass sass -o public --watch",
+    "start-sass": "nodemon app.js && node-sass sass -o public --watch",
     "unittest": "mocha",
-    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./babelrc,./package.json,/npm-debug.log,./sass,./test --copy-files"
+    "build": "webpack", 
+    "start": "node dist/bundle.js"
   },
   "keywords": [
     "minimal",
