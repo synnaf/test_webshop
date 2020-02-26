@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "engines": {
     "node": "12.13.0"
-  }, 
+  },
   "description": "A basic webshop 2019-02-19",
   "main": "app.js",
   "scripts": {
     "start-sass": "nodemon app.js && node-sass sass -o public --watch",
     "unittest": "mocha",
-    "build": "webpack", 
+    "build": "webpack",
     "start": "node dist/bundle.js"
   },
   "keywords": [
